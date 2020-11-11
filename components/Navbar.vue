@@ -13,7 +13,7 @@
         <b-nav-item href="/history">History</b-nav-item>
         <b-nav-item href="/audio">Audio Clips</b-nav-item>
         <b-nav-item href="/contact">Contact</b-nav-item>
-        <b-nav-item href="/testimonals">Testimonials</b-nav-item>
+        <b-nav-item href="/testimonials">Testimonials</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -50,6 +50,8 @@ ul.navbar-nav {
 
 #navbar {
   background-color: #e0d1e0;
+      border-bottom: 2px solid #c7bac7;
+      border-radius: 20px 20px 0px 0px;
 }
 
 </style>

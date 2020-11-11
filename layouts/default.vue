@@ -122,6 +122,7 @@ body {
 
 .content {
   background-color: #e0d1e0;
+      border-radius: 0px 0px 20px 20px;
 }
 
 h1 {
