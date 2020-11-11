@@ -7,11 +7,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Crewkerne Horse & Dog Show',
+    title: 'Jessica Dalwood - Harpist',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Crewkerne Horse and Dog Summer Show has been running every year since 2006, raising funds for many charities.' }
+      { hid: 'description', name: 'description', content: 'Jessica Dalwood is a talented harpist, she is well taught in the musical arts and should be respected among one of the best of her career.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -29,10 +29,10 @@ export default {
   purgeCSS: {
     enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
     paths: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js'
+      'components/*.vue',
+      'layouts/*.vue',
+      'pages/*.vue',
+      'plugins/*.js'
     ],
     styleExtensions: ['.css'],
     whitelist: ['body', 'html', 'nuxt-progress'],
@@ -67,14 +67,7 @@ export default {
   bootstrapVue: {
     componentPlugins: [
       'LayoutPlugin',
-      'FormPlugin',
       'NavbarPlugin',
-      'FormCheckboxPlugin',
-      'FormInputPlugin',
-      'FormRadioPlugin',
-      'ButtonPlugin',
-      'ToastPlugin',
-      'ModalPlugin'
     ],
     directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin']
   },
