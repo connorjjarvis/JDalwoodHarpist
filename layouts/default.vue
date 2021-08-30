@@ -1,32 +1,32 @@
 <template>
   <div class="text-center">
-      <h1>Jessica Dalwood - Harpist</h1>
-      <p style="color: black;"> Professional Musician | Talented Artist |
-      <a href="https://www.facebook.com/JessicaDalwoodHarpist/?fref=ts"><img src="~/assets/facebook.png"> Facebook</a> |
-      <a href="http://twitter.com"><img src="~/assets/twitter.png"> Twitter </a></p>
-      <Header />
-      <b-container fluid="md" class="text-center">
-        <div class="content">
-          <Nuxt />
-          <div id="author">
-            <p>Website made by <a href="mailto:connor.jarvis+jdalwoodharpist@gmail.com">Connor Jarvis</a></p>
-          </div>
+    <h1>Jessica Dalwood - Harpist</h1>
+    <p style="color: black;">
+      Professional Musician | Talented Artist |
+      <a href="https://www.facebook.com/JessicaDalwoodHarpist/?fref=ts"
+        ><img src="~/assets/facebook.png" /> Facebook</a
+      >
+      |
+      <a href="http://twitter.com"
+        ><img src="~/assets/twitter.png" /> Twitter
+      </a>
+    </p>
+    <Header />
+    <b-container fluid="md" class="text-center">
+      <div class="content">
+        <Nuxt />
+        <div id="author">
+          <p>Sponsored by <a href="https://low.ms/">LOW.MS</a></p>
         </div>
-      </b-container>
+      </div>
+    </b-container>
   </div>
 </template>
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -76,10 +76,9 @@ body {
   background-position: 50% 0%;
   background-color: #e8e1e8;
   background-repeat: no-repeat;
-  width:100%;
-  height:100%
+  width: 100%;
+  height: 100%;
 }
-
 
 .container {
   margin: 0 auto;
@@ -91,16 +90,8 @@ body {
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -122,35 +113,35 @@ body {
 
 .content {
   background-color: #e0d1e0;
-      border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 h1 {
   color: #ffffff;
-  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0,0,0,0.15);
+  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
   color: #ffffff;
-  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0,0,0,0.15);
-  padding-top:25px;
-  padding-bottom:25px;
+  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 h3 {
   color: #ffffff;
-  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0,0,0,0.15);
-  padding-top:25px;
-  padding-bottom:25px;
+  text-shadow: 2px 2px 0px #1a3823, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 p {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
 }
 
 #author p {
-  font-size: 0.8rem; 
-  padding-top:10px;
-  padding-bottom:10px;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 </style>
