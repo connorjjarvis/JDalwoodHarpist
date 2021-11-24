@@ -2,25 +2,13 @@
   <div class="main-wrapper">
     <HeaderBlack @togglenav="navOpen = !navOpen" />
 
-    <OffCanvasMobileMenu
-      :class="{ 'show-mobile-menu': navOpen }"
-      @togglenav="navOpen = !navOpen"
-    />
+    <OffCanvasMobileMenu :class="{ 'show-mobile-menu': navOpen }" @togglenav="navOpen = !navOpen" />
 
     <Breadcrumb :items="items" title="Testimonials" />
 
     <TestimonialTwo />
 
-    <div
-      class="
-        brook-testimonial-area
-        ptb--150
-        ptb-md--80
-        ptb-sm--80
-        bg_color--5
-        poss_relative
-      "
-    >
+    <div class="brook-testimonial-area ptb--150 ptb-md--80 ptb-sm--80 bg_color--5 poss_relative">
       <div class="container">
         <TestimonialWithoutCarousel />
       </div>
@@ -37,15 +25,13 @@
 <script>
 export default {
   components: {
-    HeaderBlack: () => import("@/components/HeaderBlack"),
-    OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
-    SearchPopup: () => import("@/components/SearchPopup"),
-    Breadcrumb: () => import("@/components/Breadcrumb"),
-    TestimonialTwo: () => import("@/components/sections/TestimonialTwo"),
-    TestimonialWithoutCarousel: () =>
-      import("@/components/sections/TestimonialWithoutCarousel"),
-    TestimonialThree: () => import("@/components/sections/TestimonialThree"),
-    FooterTwo: () => import("@/components/FooterTwo"),
+    HeaderBlack: () => import('@/components/HeaderBlack'),
+    OffCanvasMobileMenu: () => import('@/components/OffCanvasMobileMenu'),
+    Breadcrumb: () => import('@/components/Breadcrumb'),
+    TestimonialTwo: () => import('@/components/sections/TestimonialTwo'),
+    TestimonialWithoutCarousel: () => import('@/components/sections/TestimonialWithoutCarousel'),
+    TestimonialThree: () => import('@/components/sections/TestimonialThree'),
+    FooterTwo: () => import('@/components/FooterTwo'),
   },
 
   data() {
@@ -54,15 +40,15 @@ export default {
       searchOpen: false,
       items: [
         {
-          text: "Home",
-          to: "/",
+          text: 'Home',
+          to: '/',
         },
         {
-          text: "Element",
-          to: "/",
+          text: 'Element',
+          to: '/',
         },
         {
-          text: "Testimonials",
+          text: 'Testimonials',
           active: true,
         },
       ],
@@ -70,12 +56,12 @@ export default {
   },
 
   mounted() {
-    document.body.classList.add("template-color-1", "template-font-1");
+    document.body.classList.add('template-color-1', 'template-font-1');
   },
 
   head() {
     return {
-      title: "Testimonials",
+      title: 'Testimonials',
     };
   },
 };
