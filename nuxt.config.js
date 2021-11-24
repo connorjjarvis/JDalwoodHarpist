@@ -1,87 +1,61 @@
 export default {
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  generate: {
+    fallback: true,
+  },
 
-  // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
-
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  /*
+   ** Headers of the page
+   */
   head: {
-    title: 'Jessica Dalwood - Harpist',
+    title: "Jessica Dalwood",
+    titleTemplate: "Jessica Dalwood || %s",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Jessica Dalwood is a talented harpist, she is well taught in the musical arts and should be respected among one of the best of her career.' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
-
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
-
-  purgeCSS: {
-    enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
-    paths: [
-      'components/*.vue',
-      'layouts/*.vue',
-      'pages/*.vue',
-      'plugins/*.js'
-    ],
-    styleExtensions: ['.css'],
-    whitelist: ['body', 'html', 'nuxt-progress'],
-    extractors: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
-        extensions: ['html', 'vue', 'js']
-      }
-    ]
-  },
-
-  // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
-
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    'nuxt-purgecss',
-  ],
-
-  // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/robots',
-  ],
-  robots: {
-    UserAgent: '*',
-    Allow: '/'
-  },
-  bootstrapVue: {
-    componentPlugins: [
-      'LayoutPlugin',
-      'NavbarPlugin',
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || "",
+      },
     ],
-    directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin', 'VBScrollspyPlugin']
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
+
+  /*
+   ** Global CSS
+   */
+  css: ["assets/scss/style.scss"],
+
+  router: {
+    linkExactActiveClass: "active-link",
+  },
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: [
+    "~/plugins/vue-awesome-swiper.js",
+    "~/plugins/vuejs-paginate.js",
+    "~/plugins/vue2-google-maps.js",
+    "~/plugins/vue-masonry-css.js",
+    "~/plugins/Mixitup.client.js",
+    "~/plugins/silentbox.js",
+    { src: "~/plugins/vue-masonry", ssr: false },
+  ],
+
+  /*
+   ** Nuxt.js modules
+   */
+  modules: ["bootstrap-vue/nuxt", "@nuxtjs/style-resources"],
+
+  styleResources: {
+    scss: ["assets/scss/default/_variables.scss"],
+  },
+
+  /*
+   ** Build configuration
+   */
   build: {
-    extend(config, ctx) {
-      config.module.rules.push({
-        test: /\.(ogg|mp3|wav|mpe?g)$/i,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]'
-        }
-      })
-    },
-    analyze: false,
-  }
-}
+    extractCSS: true,
+    transpile: [/^vue2-google-maps($|\/)/],
+  },
+};

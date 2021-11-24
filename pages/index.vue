@@ -1,79 +1,100 @@
 <template>
-<div>
-  <b-row class="text-center">  
-        <b-col>
-            <h2>Professional Harpist</h2>
-        </b-col>
-    </b-row>
-    <b-row class="text-center">
-    <b-col sm="2" md="3">
-      <img src="~assets/photo4.gif">
-    </b-col>
-    <b-col sm="8" md="8">
-      <p>
-Jessica Dalwood - Professional Harpist and Accomplished Teacher 
-<br><br><br>
-The harp is an elegant instrument with a beautiful tone that will add a magical touch to your wedding or special occasion. 
-<br><br><br>
-My name is Jessica I am a versatile harpist and musician and has a range of musical skills and abilities. She works with a varying range of musical styles, from classical to folk, modern and jazz.
-<br><br><br>
-Based in Somerset/South West England - This covers Somerset, Dorset, Bath &amp; Bristol. If you have any enquiries about my coverage see my contact details on the <a href="contact">contacts page!</a>
-</p>
-      <div id="musicContainer">
-<div id="music">
-<b>Beauty and the beast</b>
-<br>
-	<audio preload="metadata" controls>
-	<source src="~/assets/music/BeautyandtheBeast.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
-</div>
-<div id="music">
-<b>Can't help falling in love with you</b>
-<br>
-<audio preload="metadata" controls>
-  <source src="~/assets/music/CantHelpFallingInLoveWithYou.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-</audio>
-</div>
-<div id="music">
-<b>Fire Dance</b>
-<br>
-<audio preload="metadata" controls>
-  <source src="~/assets/music/FireDance.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-</audio>
-</div>
-<div id="music">
-<b>Watching the Wheat</b>
-<br>
-<audio preload="metadata" controls>
-  <source src="~/assets/music/WatchingTheWheat.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-</audio>
-</div>
-</div>
-    </b-col>
-    <b-col>
-    </b-col>
-  </b-row>
-</div>
+  <div class="main-container">
+    <HeaderBlack
+      class="bg_color--14 border-bottom"
+      @togglenav="navOpen = !navOpen"
+    />
+
+    <OffCanvasMobileMenu
+      :class="{ 'show-mobile-menu': navOpen }"
+      @togglenav="navOpen = !navOpen"
+    />
+
+    <HeroEssential />
+
+    <div class="brook-call-to-action bg_color--24 ptb--40">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-6">
+            <div
+              class="
+                call-content
+                essential-cta-content
+                text-center text-sm-left
+              "
+            >
+              <h3 class="text-black wow move-up">
+                Let’s create something extraordinary together.
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="
+                call-btn
+                text-center text-md-right
+                mt_mobile--20
+                wow
+                move-up
+              "
+            >
+              <n-link
+                to="/contact"
+                class="
+                  brook-btn
+                  bk-btn-white
+                  text-theme
+                  btn-sd-size
+                  essential-btn
+                "
+                >Contact me now</n-link
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <EssentialIconBox />
+
+    <EssentialService />
+
+    <EssentialTestimonial />
+
+    <FooterTwo />
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+export default {
+  components: {
+    HeaderBlack: () => import("@/components/HeaderBlack"),
+    OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
+    HeroEssential: () => import("@/components/HeroEssential"),
+    EssentialIconBox: () => import("@/components/EssentialIconBox"),
+    EssentialService: () => import("@/components/EssentialService"),
+    EssentialTestimonial: () => import("@/components/EssentialTestimonial"),
+    FooterTwo: () => import("@/components/FooterTwo"),
+  },
 
-export default Vue.extend({})
+  data() {
+    return {
+      navOpen: false,
+    };
+  },
+
+  mounted() {
+    document.body.classList.add(
+      "template-color-15",
+      "template-font-7",
+      "CerebriSans-font"
+    );
+  },
+
+  head() {
+    return {
+      title: "Home",
+    };
+  },
+};
 </script>
-
-<style>
-#musicContainer {
-    margin: 0 auto;
-}
-
-#music {
-    display: inline-block;
-    margin-right: 10px;
-    text-align: center;
-}
-</style>
