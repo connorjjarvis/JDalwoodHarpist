@@ -64,7 +64,7 @@
         width: 100%;
         z-index: 999;
         position: fixed !important;
-        background-color: #fff;
+        background-color: #f7f1ec;
         box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
         animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
     }

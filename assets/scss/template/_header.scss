@@ -128,7 +128,8 @@
 }
 
 header.br_header.header-default.vertical-slide-portfolio {
-    background: #fff;
+    
+  background-color: #f7f1ec;
 }
 
 
@@ -137,6 +138,7 @@ header.br_header.header-default.vertical-slide-portfolio {
 
 .header-default {
     position: relative;
+    background-color: #f7f1ec;
     z-index: 9;
 
     &.haeder-fixed-width {
