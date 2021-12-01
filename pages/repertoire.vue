@@ -2,10 +2,7 @@
   <div class="main-wrapper">
     <HeaderBlack @togglenav="navOpen = !navOpen" />
 
-    <OffCanvasMobileMenu
-      :class="{ 'show-mobile-menu': navOpen }"
-      @togglenav="navOpen = !navOpen"
-    />
+    <OffCanvasMobileMenu :class="{ 'show-mobile-menu': navOpen }" @togglenav="navOpen = !navOpen" />
 
     <Breadcrumb :items="items" title="Repertoire" background="repertoire" />
     <div class="brook-list-wrapper pt--50 ptb-md--80 ptb-sm--60">
@@ -19,11 +16,9 @@
                 <div class="title-wrap">
                   <h5 class="heading heading-h5">Professional Experience</h5>
                   <p class="bk_pra">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum porta lorem vitae eleifend pretium. Nullam
-                    dignissim, nulla in iaculis pretium, lectus purus suscipit
-                    mi, quis iaculis dui augue et ante. Maecenas convallis
-                    commodo dui, dapibus interdum erat pharetra vitae.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim, nulla in
+                    iaculis pretium, lectus purus suscipit mi, quis iaculis dui augue et ante. Maecenas convallis commodo dui, dapibus interdum erat
+                    pharetra vitae.
                   </p>
                 </div>
               </div>
@@ -37,11 +32,9 @@
                 <div class="title-wrap">
                   <h5 class="heading heading-h5">Unique ideas</h5>
                   <p class="bk_pra">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum porta lorem vitae eleifend pretium. Nullam
-                    dignissim, nulla in iaculis pretium, lectus purus suscipit
-                    mi, quis iaculis dui augue et ante. Maecenas convallis
-                    commodo dui, dapibus interdum erat pharetra vitae.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim, nulla in
+                    iaculis pretium, lectus purus suscipit mi, quis iaculis dui augue et ante. Maecenas convallis commodo dui, dapibus interdum erat
+                    pharetra vitae.
                   </p>
                 </div>
               </div>
@@ -106,16 +99,11 @@
               <div class="space"></div>
               <h5 class="heading heading-h5">Modern dots</h5>
               <p class="bk_pra mt--15">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim,
-                nulla in iaculis pretium, lectus purus suscipit mi, quis iaculis
-                dui augue et ante. Maecenas convallis commodo dui, dapibus
-                interdum erat pharetra vitae. Maecenas semper purus non
-                tincidunt mattis. Maecenas consectetur ipsum eu tempor suscipit.
-                Vivamus in ex efficitur, tincidunt leo non, lacinia nulla. Cras
-                luctus fermentum quam, rhoncus elementum nibh gravida ut. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut
-                maximus ex.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim, nulla in
+                iaculis pretium, lectus purus suscipit mi, quis iaculis dui augue et ante. Maecenas convallis commodo dui, dapibus interdum erat
+                pharetra vitae. Maecenas semper purus non tincidunt mattis. Maecenas consectetur ipsum eu tempor suscipit. Vivamus in ex efficitur,
+                tincidunt leo non, lacinia nulla. Cras luctus fermentum quam, rhoncus elementum nibh gravida ut. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Vestibulum ut maximus ex.
               </p>
               <div class="space"></div>
             </div>
@@ -132,10 +120,10 @@
 <script>
 export default {
   components: {
-    HeaderBlack: () => import("@/components/HeaderBlack"),
-    OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
-    Breadcrumb: () => import("@/components/Breadcrumb"),
-    FooterTwo: () => import("@/components/FooterTwo"),
+    HeaderBlack: () => import('@/components/HeaderBlack'),
+    OffCanvasMobileMenu: () => import('@/components/OffCanvasMobileMenu'),
+    Breadcrumb: () => import('@/components/Breadcrumb'),
+    FooterTwo: () => import('@/components/FooterTwo'),
   },
 
   data() {
@@ -143,37 +131,37 @@ export default {
       navOpen: false,
       items: [
         {
-          text: "Home",
-          to: "/",
+          text: 'Home',
+          to: '/',
         },
         {
-          text: "Repertoire",
+          text: 'Repertoire',
           active: true,
         },
       ],
       lists: [
         {
-          title: "Entry 1",
+          title: 'Entry 1',
           marker: 1,
         },
         {
-          title: "Entry 2",
+          title: 'Entry 2',
           marker: 2,
         },
         {
-          title: "Entry 3",
+          title: 'Entry 3',
           marker: 3,
         },
         {
-          title: "Entry 4",
+          title: 'Entry 4',
           marker: 4,
         },
         {
-          title: "Entry 5",
+          title: 'Entry 5',
           marker: 5,
         },
         {
-          title: "Entry 6",
+          title: 'Entry 6',
           marker: 6,
         },
       ],
@@ -182,7 +170,7 @@ export default {
 
   head() {
     return {
-      title: "Dividers",
+      title: 'Repertoire',
     };
   },
 };
