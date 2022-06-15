@@ -2,10 +2,7 @@
   <div class="main-wrapper">
     <HeaderBlack @togglenav="navOpen = !navOpen" />
 
-    <OffCanvasMobileMenu
-      :class="{ 'show-mobile-menu': navOpen }"
-      @togglenav="navOpen = !navOpen"
-    />
+    <OffCanvasMobileMenu :class="{ 'show-mobile-menu': navOpen }" @togglenav="navOpen = !navOpen" />
 
     <Breadcrumb :items="items" title="Teaching" background="teaching" />
     <div class="brook-list-wrapper pt--50 ptb-md--80 ptb-sm--60">
@@ -107,16 +104,11 @@
               <div class="space"></div>
               <h5 class="heading heading-h5">Modern dots</h5>
               <p class="bk_pra mt--15">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim,
-                nulla in iaculis pretium, lectus purus suscipit mi, quis iaculis
-                dui augue et ante. Maecenas convallis commodo dui, dapibus
-                interdum erat pharetra vitae. Maecenas semper purus non
-                tincidunt mattis. Maecenas consectetur ipsum eu tempor suscipit.
-                Vivamus in ex efficitur, tincidunt leo non, lacinia nulla. Cras
-                luctus fermentum quam, rhoncus elementum nibh gravida ut. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut
-                maximus ex.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim, nulla in
+                iaculis pretium, lectus purus suscipit mi, quis iaculis dui augue et ante. Maecenas convallis commodo dui, dapibus interdum erat
+                pharetra vitae. Maecenas semper purus non tincidunt mattis. Maecenas consectetur ipsum eu tempor suscipit. Vivamus in ex efficitur,
+                tincidunt leo non, lacinia nulla. Cras luctus fermentum quam, rhoncus elementum nibh gravida ut. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Vestibulum ut maximus ex.
               </p>
               <div class="space"></div>
             </div>
@@ -133,10 +125,10 @@
 <script>
 export default {
   components: {
-    HeaderBlack: () => import("@/components/HeaderBlack"),
-    OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
-    Breadcrumb: () => import("@/components/Breadcrumb"),
-    FooterTwo: () => import("@/components/FooterTwo"),
+    HeaderBlack: () => import('@/components/HeaderBlack'),
+    OffCanvasMobileMenu: () => import('@/components/OffCanvasMobileMenu'),
+    Breadcrumb: () => import('@/components/Breadcrumb'),
+    FooterTwo: () => import('@/components/FooterTwo'),
   },
 
   data() {
@@ -144,11 +136,11 @@ export default {
       navOpen: false,
       items: [
         {
-          text: "Home",
-          to: "/",
+          text: 'Home',
+          to: '/',
         },
         {
-          text: "Teaching",
+          text: 'Teaching',
           active: true,
         },
       ],
@@ -175,7 +167,7 @@ export default {
 
   head() {
     return {
-      title: "Dividers",
+      title: 'Teaching',
     };
   },
 };
