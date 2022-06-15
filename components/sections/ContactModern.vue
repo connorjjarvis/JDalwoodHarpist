@@ -5,19 +5,19 @@
                 <div class="col-lg-6 col-12 pr--50 ptb-md--80 ptb-sm--80">
                     <div class="contact-modern bg_color--18 space_dec--100 pt--120 pb--120 pl--60 pr--60">
                         <div class="inner">
-                            <h2 class="heading heading-h2 text-white">Start a new project?</h2>
+                            <h2 class="heading heading-h2 text-white">Start planning your perfect day</h2>
 
                             <div class="classic-address text-left mt--60">
-                                <h4 class="heading heading-h4 text-white">Visit our studio at</h4>
+                                <h4 class="heading heading-h4 text-white">Feel free to contact me</h4>
                                 <div class="desc mt--15">
-                                    <p class="bk_pra line-height-2-22 text-white">2005 Stokes Isle Apt. 896, <br> Vacaville 10010, USA</p>
+                                    <p class="bk_pra line-height-2-22 text-white">01234567890</p>
                                 </div>
                             </div>
 
                             <div class="classic-address text-left mt--60">
                                 <h4 class="heading heading-h4 text-white">Message us</h4>
                                 <div class="desc mt--15 mb--30">
-                                    <p class="bk_pra line-height-2-22 text-white">info@yourdomain.com <br> (+68) 120034509</p>
+                                    <p class="bk_pra line-height-2-22 text-white">j.dalwood@hotmail.co.uk</p>
                                 </div>
                                 <div class="social-share social--transparent text-white">
                                     <a href="https://www.facebook.com/" target="_blank">

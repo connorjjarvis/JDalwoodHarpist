@@ -2,11 +2,11 @@
   <div
     class="
       breadcrumb-area
-      pt--400
-      pt_lg--300
-      pt_md--250
-      pt_sm--200
-      pb--100
+      pt--300
+      pt_lg--275
+      pt_md--225
+      pt_sm--185
+      pb--80
       bg_image--8
       breadcrumb-title-bar breadcrumb-title-white
     "

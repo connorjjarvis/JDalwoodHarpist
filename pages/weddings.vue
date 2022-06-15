@@ -11,7 +11,7 @@
     <div class="brook-list-wrapper pt--50 ptb-md--80 ptb-sm--60">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="col">
             <!-- Start Single List -->
             <div class="bk-list move-up wow">
               <div class="list-header ">
@@ -42,9 +42,9 @@
           </div>
 
 
-          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="col">
             <!-- Start Single List -->
-            <div class="bk-list--2 move-up wow">
+            <div class="bk-list--2 mt--45 move-up wow">
               <div class="list-header mb--30 with-ckeck center" v-for="list in lists" :key="list.i">
                 <div class="marker  dark-color"></div>
                 <div class="title-wrap">
@@ -91,7 +91,7 @@
               <div class="spacing"></div>
               <div class="call-btn text-center">
                 <n-link
-                  to="/contact-us-modern"
+                  to="/pricing"
                   class="
                     brook-btn
                     bk-btn-theme
@@ -127,17 +127,50 @@
                     <div class="col-lg-12">
                         <div class="dividers-inner">
                             <div class="space"></div>
-                            <h5 class="heading heading-h5">Basic thick line</h5>
-                            <p class="bk_pra mt--15">Brook presents your services with flexible, convenient and multipurpose layouts. You can select your favorite layouts & elements for particular projects with unlimited customization possibilities. Pixel-perfect replication of the designers is intended for both front-end & back-end developers to build their pages with greater comfort thanks to the higher custom ability, adaptability as well as flexibility.</p>
+                            <h5 class="heading heading-h5">Elegant and Beautiful Music</h5>
+                            <p class="bk_pra mt--15">The harp is an elegant instrument with a beautiful tone that will add a magical touch to your wedding or special occasion.
+</p>
+
+            <div class="container mt--45">
+        <div class="row align-items-center" style="width:75%; margin-left: auto; margin-right: auto">
+                      <div class="col">
+  <p>Beauty and the beast</p> <br> <audio preload="metadata" controls="controls"><source src="/_nuxt/assets/music/BeautyandtheBeast.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio><p>Can't help falling in love with you</p> <br> <audio preload="metadata" controls="controls"><source src="/_nuxt/assets/music/CantHelpFallingInLoveWithYou.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+</audio></div>
+
+                    <div class="col"><p>Fire Dance</p> <br> <audio preload="metadata" controls="controls"><source src="/_nuxt/assets/music/FireDance.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+</audio><p>Watching the Wheat</p> <br> <audio preload="metadata" controls="controls"><source src="/_nuxt/assets/music/WatchingTheWheat.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+</audio></div>
+                        </div>
+                        </div>
                             <div class="space"></div>
                             <div class="basic-thine-line"></div>
                         </div>
                     </div>
-                </div>
+                        </div>
             </div>
-        </div>
+            </div>
         <!-- End Divider Area -->
 
+    <div
+      class="
+        brook-pricing-table-area
+        ptb--50
+        ptb-md--40
+        ptb-sm--40
+        bg_color--5
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center">
+                    <div class="center">
+        <table><tbody><tr><td><strong>WEDDINGS</strong></td><td></td></tr><tr><td> <br>Ceremony  </td><td> <br> £275 </td></tr><tr><td> <br>Ceremony and Drinks Reception <em>(Most Popular)</em></td><td> <br> £345 </td></tr><tr><td> <br>Ceremony and Wedding Breakfast <em>(Recommended)</em></td><td> <br>£390 </td></tr><tr><td> <br>Ceremony, Drinks Reception and Wedding Breakfast <em>(Recommended)</em></td><td> <br>£475 </td></tr><tr><td> <br> Drinks Reception </td><td> <br>£295 </td></tr><tr><td> <br>Wedding Breakfast  </td><td> <br>£325 </td></tr><tr><td> <br>Drinks Reception and Wedding Breakfast </td><td> <br>£415 </td></tr><tr><td></td><td></td></tr><tr><td><strong>OTHER EVENTS </strong></td><td></td></tr><tr><td>Background Music First Hour</td><td>£275</td></tr><tr><td> <br>Background Music Additional Hours (up to 4)</td><td>£60</td></tr><tr><td></td><td></td></tr><tr><td><strong>OTHER CHARGES</strong></td><td></td></tr><tr><td> Second Venue  </td><td> <br>£25 </td></tr><tr><td>  PA Hire (100+ guests)  <br></td><td> <br>£60 </td></tr><tr><td>Travel (after 1 hour)</td><td>POA</td></tr></tbody></table>
+      </div></div></div>
+    </div>
     <FooterTwo />
   </div>
 </template>
@@ -187,7 +220,7 @@ export default {
 
   head() {
     return {
-      title: "Dividers",
+      title: "Weddings",
     };
   },
 };

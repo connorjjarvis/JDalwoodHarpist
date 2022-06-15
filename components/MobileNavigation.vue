@@ -29,7 +29,7 @@
               <nuxt-link to="/orchestral"><span>Orchestral</span></nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/pricing-plans"><span>Pricing list</span></nuxt-link>
+              <nuxt-link to="/pricing"><span>Pricing list</span></nuxt-link>
             </li>
           </ul>
         </li>

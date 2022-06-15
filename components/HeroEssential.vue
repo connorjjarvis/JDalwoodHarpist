@@ -43,7 +43,7 @@ export default {
         },
         {
           id: 2,
-          heading: "Jessica Dalwood Professional Harpist",
+          heading: "Jessica Dalwood Weddings, Parties & More!",
           bgImage: "/img/slider/essential-2.jpg",
         },
       ],

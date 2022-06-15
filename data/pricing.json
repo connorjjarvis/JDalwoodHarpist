@@ -16,9 +16,9 @@
             ]
         },
         {
-            "currency": "$",
-            "price": "60",
-            "package": "Standard package",
+            "currency": "£",
+            "price": "375",
+            "package": "Ceremony, Drinks Reception and Wedding Breakfast (Recommended)",
             "mark": true,
             "active": true,
             "headings": [

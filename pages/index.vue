@@ -42,7 +42,6 @@
                 to="/contact"
                 class="
                   brook-btn
-                  bk-btn-white
                   text-theme
                   btn-sd-size
                   essential-btn

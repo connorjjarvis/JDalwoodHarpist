@@ -8,7 +8,7 @@
       </li>
 
       <li class="lavel-1 with--drop slide--megamenu">
-        <n-link to="/about-us-01">
+        <n-link to="#">
           <span>Services</span>
         </n-link>
         <ul class="mega__width--fullscreen">
@@ -42,7 +42,7 @@
                     >
                   </li>
                   <li>
-                    <nuxt-link to="/pricing-plans"
+                    <nuxt-link to="/pricing"
                       ><span>Pricing list</span></nuxt-link
                     >
                   </li>
