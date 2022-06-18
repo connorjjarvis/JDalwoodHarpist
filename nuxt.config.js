@@ -45,12 +45,26 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["bootstrap-vue/nuxt", "@nuxtjs/style-resources"],
-
+  modules: ["bootstrap-vue/nuxt", '@nuxtjs/recaptcha', "@nuxtjs/style-resources", "@nuxtjs/axios"],
+  serverMiddleware: [
+    { path: '/api/check-token', handler: '~/api/recaptcha' },
+  ],
   styleResources: {
     scss: ["assets/scss/default/_variables.scss"],
   },
 
+  recaptcha: {
+    siteKey: '6Le-FHYgAAAAAAqrTHoI0SA5xlfn2T-OwXOz5J63',
+    version: 2,
+    mode: 'Base',
+    size: 'compact'
+  },
+  publicRuntimeConfig: {
+    recaptcha: {
+      /* reCAPTCHA options */
+      siteKey: '6Le-FHYgAAAAAAqrTHoI0SA5xlfn2T-OwXOz5J63'
+    }
+  },
   /*
    ** Build configuration
    */

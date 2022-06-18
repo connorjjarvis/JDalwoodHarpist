@@ -46,6 +46,7 @@
                   btn-sd-size
                   essential-btn
                 "
+                style="background-color: rgb(172 97 238);"
                 >Contact me now</n-link
               >
             </div>

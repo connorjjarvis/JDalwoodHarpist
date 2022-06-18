@@ -6,17 +6,13 @@
 
     <Breadcrumb :items="items" title="Testimonials" />
 
-    <TestimonialTwo />
 
-    <div class="brook-testimonial-area ptb--150 ptb-md--80 ptb-sm--80 bg_color--5 poss_relative">
+    <div class="brook-testimonial-area ptb--80 ptb-md--40 ptb-sm--40 bg_color--5 poss_relative">
       <div class="container">
         <TestimonialWithoutCarousel />
       </div>
     </div>
 
-    <TestimonialThree addClass="ptb--150 ptb-md--80 ptb-sm--60 bg_color--7" />
-
-    <TestimonialThree addClass="ptb--150 ptb-md--80 ptb-sm--60 bg_color--6" />
 
     <FooterTwo />
   </div>
@@ -41,10 +37,6 @@ export default {
       items: [
         {
           text: 'Home',
-          to: '/',
-        },
-        {
-          text: 'Element',
           to: '/',
         },
         {

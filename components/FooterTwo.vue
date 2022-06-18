@@ -85,8 +85,7 @@
             <div class="copyright-right text-md-right text-center">
               <p>
                 &copy; 2021
-                <b>Sponsored by <a href="https://low.ms">LOW.MS</a></b> &
-                developed by
+                               developed by
                 <a href="https://connorjarvis.co.uk"><b>Connor Jarvis</b></a>
               </p>
             </div>

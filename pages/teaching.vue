@@ -9,25 +9,42 @@
       <div class="container">
         <div class="row">
 
-          <div class="col center">
-            <!-- Start Single List -->
-            <div class="bk-list--2 mt--45 move-up wow">
-              <div class="list-header mb--30 with-ckeck center" style="padding-left: 20%;" v-for="list in lists" :key="list.i">
-                <div class="marker  dark-color"></div>
-                <div class="title-wrap" >
+          <div class="col">
+          <div class="row center">
+          <div class="col">
+            <div class="bk-list--2 mt--30 move-up wow" >
+              <div class="list-header mb--30 with-ckeck " v-for="list in listOne" :key="list.i">
+                <div class="marker dark-color"></div>
+                <div class="title-wrap">
                   <h6 class="heading heading-h5">{{ list.title }}</h6>
                 </div>
               </div>
-            </div>
-            <!-- End Single List -->
-        <div class="image-wrap mt--30 center">
-            <div class="thumb">
-                <div class="shape">
-                    <img class="egg" src="~/assets/images/photo2.gif" alt="shape image">
+              </div>
+              </div>
+          <div class="col">
+                          <div class="bk-list--2 mt--30 move-up wow">
+              <div class="list-header mb--30 with-ckeck " v-for="list in listTwo" :key="list.i">
+                <div class="marker dark-color"></div>
+                <div class="title-wrap">
+                  <h6 class="heading heading-h5">{{ list.title }}</h6>
                 </div>
+              </div>
+              </div>
+              </div>
+              </div>
+            <!-- End Single List -->
+
+          <div class="row" style="justify-content: center;">
+            <!-- Image Wrap -->
+            <div class="image-wrap mt--30">
+              <div class="thumb">
+                <div class="shape">
+                  <img class="egg" src="~/assets/images/photo2.gif" alt="shape image" />
+                </div>
+              </div>
             </div>
-        </div>
           </div>
+      </div>
           <div class="col">
             <!-- Start Single List -->
             <div class="bk-list move-up wow">
@@ -76,41 +93,25 @@
       </div>
     </div>
     <!-- Start Divider Area -->
-    <div class="brook-dividers-area bg_color--1">
+<div class="brook-call-to-action bg_color--1 ptb--80 ptb-md--80 ptb-sm--60">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="dividers-inner">
-              <div class="space"></div>
-              <div class="text-center">
-                <div class="basic-modern-dots">
-                  <div class="dot first-circle"></div>
-                  <div class="dot second-circle"></div>
-                  <div class="dot third-circle"></div>
-                </div>
+        <div class="row align-items-center">
+          <div class="col-lg-12 col-12">
+            <div class="call-content vertical-call-toaction text-center">
+              <h3 class="heading heading-h3">Interested in learning?</h3>
+              <div class="spacing"></div>
+              <div class="call-btn text-center">
+                <n-link
+                  to="/contact"
+                  class="
+                    brook-btn
+                    bk-btn-theme
+                    text-theme
+                    btn-sd-size btn-rounded
+                  "
+                  >Contact me now</n-link
+                >
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Divider Area -->
-    <!-- Start Divider Area -->
-    <div class="brook-dividers-area bg_color--1">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="dividers-inner">
-              <div class="space"></div>
-              <h5 class="heading heading-h5">Modern dots</h5>
-              <p class="bk_pra mt--15">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta lorem vitae eleifend pretium. Nullam dignissim, nulla in
-                iaculis pretium, lectus purus suscipit mi, quis iaculis dui augue et ante. Maecenas convallis commodo dui, dapibus interdum erat
-                pharetra vitae. Maecenas semper purus non tincidunt mattis. Maecenas consectetur ipsum eu tempor suscipit. Vivamus in ex efficitur,
-                tincidunt leo non, lacinia nulla. Cras luctus fermentum quam, rhoncus elementum nibh gravida ut. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Vestibulum ut maximus ex.
-              </p>
-              <div class="space"></div>
             </div>
           </div>
         </div>
@@ -144,22 +145,24 @@ export default {
           active: true,
         },
       ],
-      lists: [
+      listOne: [
         {
-          title: "Professional",
+          title: 'Professional',
           marker: 1,
         },
         {
-          title: "Reliable",
+          title: 'Reliable',
           marker: 2,
+        }
+      ],      
+      listTwo: [
+        {
+          title: 'Creative',
+          marker: 1,
         },
         {
-          title: "Creative",
-          marker: 3,
-        },
-        {
-          title: "Adaptive",
-          marker: 4,
+          title: 'Adaptive',
+          marker: 2,
         },
       ],
     };

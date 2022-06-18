@@ -4,59 +4,23 @@
     "testimonials": [
         {
             "id": 1,
-            "name": "Yeasin Rony",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-1.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
+            "name": "Chloe O'Shea (Wedding)",
+            "text": "“We booked Jess for our October 2016 wedding at Highcliffe Castle in Dorset. Jess was <span>highly professional</span> throughout the booking process and we felt very reassured. On the day itself the music was faultless, absolutely beautiful. Our ceremony was recorded, meaning we have the joy of listening to it over and over again. The music was truly perfect and we would recommend Jess to anyone.”"
         },
         {
             "id": 2,
-            "name": "Tasnim Akter",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-2.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
+            "name": "Nikki Burge (Wedding)",
+            "text": "“We recently booked Jess to play during the ceremony and reception at our wedding and were <span>absolutely delighted</span> with her performance! Jess played beautifully to our guests and everyone commented on just how special it was to have a harpist, as well as how they enjoyed the range of classical and more modern pieces! We genuinely cannot thank Jess enough for making our day that bit more special and would recommend her to everyone!!! Jess is very competitively priced in comparison to other musicians and is so, so talented!!! We could listen to Jess play all day long! Thank you, Jess!”"
         },
         {
             "id": 3,
-            "name": "Uzzal Hossain",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-3.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
+            "name": "Paul & Denise Bently (10/10)",
+            "text": "“I'm so glad we made the decision to book Jess for our 30th anniversary wedding vow renewal ceremony. Her presence lifted the whole event to another level & Jess was a delight to deal with, managing to incorporate our chosen music ancient & modern into the proceedings. Our friends & family were overwhelmed. An amazing <span>talented</span> young lady whom we would recommend without hesitation.”"
         },
         {
             "id": 4,
-            "name": "Maria",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-4.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
-        },
-        {
-            "id": 5,
-            "name": "Bindu",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-5.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
-        },
-        {
-            "id": 6,
-            "name": "Raju",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-6.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
-        },
-        {
-            "id": 7,
-            "name": "Harley Mills",
-            "position": "PR Officer",
-            "thumb": "/img/testimonial/clint-1/clint-7.jpg",
-            "alt": "client image",
-            "text": "“Theme is <span>@initiative</span> to use. Even for a WordPress beginner like me, Brook offers all the functions and features with simple instructions”"
+            "name": "Rehanna",
+            "text": "“Jessica played on our wedding ceremony on the 20 September 2014. <span>Highly recommend</span>. Individual approach and high level of professionalism, and a huge talent. Her music made our wedding ceremony unforgettable.”"
         }
     ]
 }

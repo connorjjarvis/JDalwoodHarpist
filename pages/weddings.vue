@@ -45,27 +45,42 @@
 
 
           <div class="col">
-            <!-- Start Single List -->
-            <div class="bk-list--2 mt--45 move-up wow">
-              <div class="list-header mb--30 with-ckeck center" v-for="list in lists" :key="list.i">
+          <div class="row">
+          <div class="col">
+            <div class="bk-list--2 mt--30 move-up wow" style="float:right;">
+              <div class="list-header mb--30 with-ckeck center" v-for="list in listOne" :key="list.i">
                 <div class="marker dark-color"></div>
                 <div class="title-wrap">
                   <h6 class="heading heading-h5">{{ list.title }}</h6>
                 </div>
               </div>
-            </div>
+              </div>
+              </div>
+          <div class="col">
+                          <div class="bk-list--2 mt--30 move-up wow" style="float:left;">
+              <div class="list-header mb--30 with-ckeck center" v-for="list in listTwo" :key="list.i">
+                <div class="marker dark-color"></div>
+                <div class="title-wrap">
+                  <h6 class="heading heading-h5">{{ list.title }}</h6>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
             <!-- End Single List -->
 
+          <div class="row">
             <!-- Image Wrap -->
             <div class="image-wrap mt--30 center">
               <div class="thumb">
                 <div class="shape">
-                  <img class="egg" src="~/assets/images/photo1.gif" alt="shape image" />
+                  <img class="egg" style="float: right;" src="~/assets/images/photo1.gif" alt="shape image" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+          </div>
       </div>
     </div>
     <!-- Start Divider Area -->
@@ -87,18 +102,18 @@
         <div class="row align-items-center">
           <div class="col-lg-12 col-12">
             <div class="call-content vertical-call-toaction text-center">
-              <h3 class="heading heading-h3">Interested in creating your perfect day?</h3>
+              <h3 class="heading heading-h3">Create your perfect day now</h3>
               <div class="spacing"></div>
               <div class="call-btn text-center">
                 <n-link
-                  to="/pricing"
+                  to="/contact"
                   class="
                     brook-btn
                     bk-btn-theme
                     text-theme
                     btn-sd-size btn-rounded
                   "
-                  >Click here for prices</n-link
+                  >Contact me now</n-link
                 >
               </div>
             </div>
@@ -163,12 +178,8 @@
         bg_color--5
       "
     >
-      <div class="container">
-        <div class="row align-items-center">
-                    <div class="center">
-        <table><tbody><tr><td><strong>WEDDINGS</strong></td><td></td></tr><tr><td> <br>Ceremony  </td><td> <br> £275 </td></tr><tr><td> <br>Ceremony and Drinks Reception <em>(Most Popular)</em></td><td> <br> £345 </td></tr><tr><td> <br>Ceremony and Wedding Breakfast <em>(Recommended)</em></td><td> <br>£390 </td></tr><tr><td> <br>Ceremony, Drinks Reception and Wedding Breakfast <em>(Recommended)</em></td><td> <br>£475 </td></tr><tr><td> <br> Drinks Reception </td><td> <br>£295 </td></tr><tr><td> <br>Wedding Breakfast  </td><td> <br>£325 </td></tr><tr><td> <br>Drinks Reception and Wedding Breakfast </td><td> <br>£415 </td></tr><tr><td></td><td></td></tr><tr><td><strong>OTHER EVENTS </strong></td><td></td></tr><tr><td>Background Music First Hour</td><td>£275</td></tr><tr><td> <br>Background Music Additional Hours (up to 4)</td><td>£60</td></tr><tr><td></td><td></td></tr><tr><td><strong>OTHER CHARGES</strong></td><td></td></tr><tr><td> Second Venue  </td><td> <br>£25 </td></tr><tr><td>  PA Hire (100+ guests)  <br></td><td> <br>£60 </td></tr><tr><td>Travel (after 1 hour)</td><td>POA</td></tr></tbody></table>
-      </div></div></div>
-    </div>
+
+    </div></div></div>
     <FooterTwo />
   </div>
 </template>
@@ -195,7 +206,7 @@ export default {
           active: true,
         },
       ],
-      lists: [
+      listOne: [
         {
           title: 'Professional',
           marker: 1,
@@ -203,14 +214,16 @@ export default {
         {
           title: 'Reliable',
           marker: 2,
-        },
+        }
+      ],      
+      listTwo: [
         {
           title: 'Creative',
-          marker: 3,
+          marker: 1,
         },
         {
           title: 'Adaptive',
-          marker: 4,
+          marker: 2,
         },
       ],
     };

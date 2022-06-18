@@ -6,7 +6,7 @@
                     <div class="col-12">
                         <div class="header__wrapper mr--0">
                             <!-- Header Left start -->
-                            <div class="header-left" style="flex-basis: 25%">
+                            <div class="header-left" >
                                 <div class="logo">
                                     <n-link to="/">
                                         <img src="/img/logo/jessica.png" alt="Jessica Dalwood">
@@ -16,7 +16,7 @@
                             <!-- Header Left end -->
 
                             <!-- Mainmenu Wrap start -->
-                            <div class="mainmenu-wrapper d-none d-lg-block">
+                            <div class="mainmenu-wrapper ">
                                 <Navigation />
                             </div>
                             <!-- Mainmenu Wrap end -->
