@@ -1,150 +1,207 @@
 <template>
-<div>
-  <b-row class="text-center">  
-        <b-col>
-            <h2>Repertoire</h2>
-        </b-col>
-    </b-row>
-    <b-row class="text-center">
-    <b-col sm="2" md="3">
-      <img src="~assets/photo2.gif">
-    </b-col>
-    <b-col sm="8" md="8">
-    <p>This is a sample list of music Jessica is able to play for weddings and events. She will also take requests and can do arrangements of modern/popular songs.
-    </p>
-    <b-row class="text-center">
-      <b-col>
-    <h3>Traditional Wedding:</h3>
-    <ul>
-    <li>Bach - Air On The G String</li>
-    <li>Bach - Jesu Joy of Mans Desiring</li>
-    <li>Bach - Prelude in C</li>
-    <li>Clarke - Trumpet Voluntary</li>
-    <li>Frank - Panis Angelicus</li>
-    <li>Handel - Arrival of the Queen of Sheba</li>
-    <li>Handel - Water Music</li>
-    <li>Pachelbel - Canon</li>
-    <li>Purcell - Trumpet Tune </li>
-    <li>Mendelssohn - Wedding March</li>
-    <li>Wagner - Bridal Chorus</li>
-    </ul>
-      </b-col>
+  <div class="main-wrapper">
+    <HeaderBlack @togglenav="navOpen = !navOpen" />
 
-    
-      <b-col>
-        <h3>Folk /Traditional / Early Music:</h3>
-    <ul>
-    <li>Croft - Sarabande &amp; Ground</li>
-    <li>Francisque - Pavane Et Bransles</li>
-    <li>Handel - Passacaille</li>
-    <li>Handel - Tema con Variazioni</li>
-    <li>Olivia Buckley Dussek - Merch Megan</li>
-    <li>John Thomas - Watching The Wheat</li>
-    <li>Londonderry Air</li>
-    <li>David Of The White Rock</li>
-    <li>Swing Low Sweet Chariot</li>
-    <li>Scarborough Fair</li>
-    <li>Flow Gently Sweet Afton</li>
-    <li>Au Clair De La Lune</li>
-    <li>The Water Is Wide</li>
-    </ul>
-      </b-col>
-    </b-row>
+    <OffCanvasMobileMenu :class="{ 'show-mobile-menu': navOpen }" @togglenav="navOpen = !navOpen" />
 
-    <b-row class="text-center">
-    
-      <b-col><h3>Classical / Romantic:</h3>
-    <ul>
-    <li>Arne - Sonata no VI in G Major</li>
-    <li>Britten - Interlude from a Ceremony of Carols</li>
-    <li>Clarke - Chaconne</li>
-    <li>Debussy - First Arabesque</li>
-    <li>Debussy - Valse Romantique</li>
-    <li>Debussy - Clair De Lune</li>
-    <li>Delibes - Flower Duet</li>
-    <li>Dizi - Study no.21</li>
-    <li>Elgar - Nimrod</li>
-    <li>Glinka - Variations of a Theme of Mozart &amp; Nocturne</li>
-    <li>Godefroid - Etude de Concert</li>
-    <li>Handel - Passacaglia</li>
-    <li>Handel - Theme and Variations</li>
-    <li>Hasselmans - La Source</li>
-    <li>Henson-Conant - Nataliana</li>
-    <li>Henson-Conant - The Nightingale</li>
-    <li>Naderman - Sonatas from Sept Sonates Progressives</li>
-    <li>Parry - Sonata in D Major</li>
-    <li>Tournier - Au Matin</li>
-    <li>Tournier - Quatre Preludes</li>
-    <li>Watkins - Passacaglia</li>
-    <li>Watkins - Petite Suite</li>
-    <li>Zabel - La Source</li>
-    </ul>
-      </b-col>
+    <Breadcrumb :items="items" title="Repertoire" background="repertoire" />
+    <div class="brook-list-wrapper pt--50 ptb-md--80 ptb-sm--60">
+      <div class="container">
+        <div class="row">
 
-    
-      <b-col><h3>Jazz / Modern Arrangements:</h3>
-    <ul>
-    <li>Adele - Someone Like You									</li>
-    <li>Armstrong - Wonderful World                                 </li>
-    <li>The Beatles - Here Comes The Sun                            </li>
-    <li>Beauty And The Beast - Tale As Old As Time                  </li>
-    <li>Bruno Mars - Marry You                                      </li>
-    <li>Billy Joel - She's Only A Woman                             </li>
-    <li>Bruno Mars - Just The Way You Are                           </li>
-    <li>Cavatina                                                    </li>
-    <li>Charlene Soraia - Wherever You Will Go                      </li>
-    <li>Chertok - Around The Clock Suite                            </li>
-    <li>Christina Perri - A Thousand Years                          </li>
-    <li>Coldplay - Clocks                                           </li>
-    <li>Coldplay - Everglow                                         </li>
-    <li>Coldplay - Yellow                                           </li>
-    <li>Damien Rice - The Blower's Daughter                         </li>
-    <li>David Guetta - Without You                                  </li>
-    <li>Ed Sheeran - Castle On The Hill                             </li>
-    <li>Ed Sheeran - Thinking Out Loud                              </li>
-    <li>Ellie Goulding - How Long Will I Love You                   </li>
-    <li>Ellie Goulding - Your Song                                  </li>
-    <li>Elvis Presley - Can't Help Falling In Love With You         </li>
-    <li>Enrique Iglesias - Hero                                     </li>
-    <li>Florence And The Machine - Never Let Me Go                  </li>
-    <li>Frank Sinatra - Fly Me To The Moon                          </li>
-    <li>Hallelujah                                                  </li>
-    <li>Jason Mraz - I'm Yours                                      </li>
-    <li>John Barry - Somewhere In Time                              </li>
-    <li>John Legend - All Of Me                                     </li>
-    <li>Kanga - Misty (arrangement)                                 </li>
-    <li>Kanga - Moon River                                          </li>
-    <li>Kanga - My Favorite Things                                  </li>
-    <li>Keane - Somewhere Only We Know                              </li>
-    <li>Les Mis - I Dreamed A Dream                                 </li>
-    <li>Nat King Cole - When I Fall In Love                         </li>
-    <li>Owl City - Fireflies                                        </li>
-    <li>Passenger - Let Her Go                                      </li>
-    <li>Phantom Of The Opera - All I Ask Of You                     </li>
-    <li>Sam Smith - Stay With Me                                    </li>
-    <li>Snow Patrol - Chasing Cars                                  </li>
-    </ul>
-      </b-col>
-    </b-row>
-    </b-col>
-  </b-row>
-</div>
+
+            <!-- Start Single List -->
+              <div class="col-md-6" style="justify-content: centre" v-for="list in lists" :key="list.i">
+                <div class="bk-list--2 move-up wow">
+<div class="list-header">
+                <h3>{{ list.title }}</h3>
+                <div v-for="item in list.content" :key="item.i">
+                  
+                <div class="marker with-dot"></div>
+                  {{ item }}
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- End Single List -->
+
+        </div>
+      </div>
+    </div>
+    <!-- Start Divider Area -->
+
+    <div class="brook-dividers-area bg_color--1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="dividers-inner">
+              <div class="space"></div>
+              <div class="basic-thine-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Divider Area -->
+    <!-- Start Divider Area -->
+    <div class="brook-dividers-area bg_color--1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="dividers-inner">
+              <div class="space"></div>
+              <h5 class="heading heading-h5">Soundcloud</h5>
+<iframe width="100%" height="450" scrolling="no" margin-top:10px="" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F7528370&amp;color=5f00ff&amp;auto_play=false&amp;show_artwork=true"></iframe>
+              <div class="space"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Divider Area -->
+
+    <FooterTwo />
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+export default {
+  components: {
+    HeaderBlack: () => import('@/components/HeaderBlack'),
+    OffCanvasMobileMenu: () => import('@/components/OffCanvasMobileMenu'),
+    Breadcrumb: () => import('@/components/Breadcrumb'),
+    FooterTwo: () => import('@/components/FooterTwo')    
+  },
 
-export default Vue.extend({})
+  data() {
+    return {
+      navOpen: false,
+      items: [
+        {
+          text: 'Home',
+          to: '/',
+        },
+        {
+          text: 'Repertoire',
+          active: true,
+        },
+      ],
+      lists: [
+        {
+          title: 'Traditional Wedding',
+          content: [
+            'Bach - Air On The G String',
+            'Bach - Jesu Joy of Mans Desiring',
+            'Bach - Prelude in C',
+            'Clarke - Trumpet Voluntary',
+            'Frank - Panis Angelicus',
+            'Handel - Arrival of the Queen of Sheba',
+            'Handel - Water Music',
+            'Pachelbel - Canon',
+            'Purcell - Trumpet Tune',
+            'Mendelssohn - Wedding March',
+            'Wagner - Bridal Chorus'
+          ]
+        },
+        {
+          title: 'Folk /Traditional / Early Music',
+          content: [
+            'Croft - Sarabande & Ground',
+            'Francisque - Pavane Et Bransles',
+            'Handel - Passacaille',
+            'Handel - Tema con Variazioni',
+            'Olivia Buckley Dussek - Merch Megan',
+            'John Thomas - Watching The Wheat',
+            'Londonderry Air',
+            'David Of The White Rock',
+            'Swing Low Sweet Chariot',
+            'Scarborough Fair',
+            'Flow Gently Sweet Afton',
+            'Au Clair De La Lune',
+            'The Water Is Wide'
+          ]
+        },
+        {
+          title: 'Classical / Romantic',
+          content: [
+            'Arne - Sonata no VI in G Major',
+            'Britten - Interlude from a Ceremony of Carols',
+            'Clarke - Chaconne',
+            'Debussy - First Arabesque',
+            'Debussy - Valse Romantique',
+            'Debussy - Clair De Lune',
+            'Delibes - Flower Duet',
+            'Dizi - Study no.21',
+            'Elgar - Nimrod',
+            'Glinka - Variations of a Theme of Mozart & Nocturne',
+            'Godefroid - Etude de Concert',
+            'Handel - Passacaglia',
+            'Handel - Theme and Variations',
+            'Hasselmans - La Source',
+            'Henson-Conant - Nataliana',
+            'Henson-Conant - The Nightingale',
+            'Naderman - Sonatas from Sept Sonates Progressives',
+            'Parry - Sonata in D Major',
+            'Tournier - Au Matin',
+            'Tournier - Quatre Preludes',
+            'Watkins - Passacaglia',
+            'Watkins - Petite Suite',
+            'Zabel - La Source'
+          ]
+        },
+        {
+          title: 'Jazz / Modern Arrangements',
+          content: [
+            'Adele - Someone Like You',
+            'Armstrong - Wonderful World',
+            'The Beatles - Here Comes The Sun',
+            'Beauty And The Beast - Tale As Old As Time',
+            'Bruno Mars - Marry You',
+            'Billy Joel - Shes Only A Woman',
+            'Bruno Mars - Just The Way You Are',
+            'Cavatina',
+            'Charlene Soraia - Wherever You Will Go',
+            'Chertok - Around The Clock Suite',
+            'Christina Perri - A Thousand Years',
+            'Coldplay - Clocks',
+            'Coldplay - Everglow',
+            'Coldplay - Yellow',
+            'Damien Rice - The Blowers Daughter',
+            'David Guetta - Without You',
+            'Ed Sheeran - Castle On The Hill',
+            'Ed Sheeran - Thinking Out Loud',
+            'Ellie Goulding - How Long Will I Love You',
+            'Ellie Goulding - Your Song',
+            'Elvis Presley - Cant Help Falling In Love With You',
+            'Enrique Iglesias - Hero',
+            'Florence And The Machine - Never Let Me Go',
+            'Frank Sinatra - Fly Me To The Moon',
+            'Hallelujah',
+            'Jason Mraz - Im Yours',
+            'John Barry - Somewhere In Time',
+            'John Legend - All Of Me',
+            'Kanga - Misty (arrangement)',
+            'Kanga - Moon River',
+            'Kanga - My Favorite Things',
+            'Keane - Somewhere Only We Know',
+            'Les Mis - I Dreamed A Dream',
+            'Nat King Cole - When I Fall In Love',
+            'Owl City - Fireflies',
+            'Passenger - Let Her Go',
+            'Phantom Of The Opera - All I Ask Of You',
+            'Sam Smith - Stay With Me',
+            'Snow Patrol - Chasing Cars'
+          ]
+        },
+        
+      ],
+    };
+  },
+
+  head() {
+    return {
+      title: 'Repertoire',
+    };
+  },
+};
 </script>
-
-<style>
-#musicContainer {
-    margin: 0 auto;
-}
-
-#music {
-    display: inline-block;
-    margin-right: 10px;
-    text-align: center;
-}
-</style>

@@ -1,0 +1,26 @@
+{
+    "sectionTitle": "Feedback from our clients.",
+    "sectionSubTitle": "Testimonials",
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Chloe O'Shea (Wedding)",
+            "text": "“We booked Jess for our October 2016 wedding at Highcliffe Castle in Dorset. Jess was <span>highly professional</span> throughout the booking process and we felt very reassured. On the day itself the music was faultless, absolutely beautiful. Our ceremony was recorded, meaning we have the joy of listening to it over and over again. The music was truly perfect and we would recommend Jess to anyone.”"
+        },
+        {
+            "id": 2,
+            "name": "Nikki Burge (Wedding)",
+            "text": "“We recently booked Jess to play during the ceremony and reception at our wedding and were <span>absolutely delighted</span> with her performance! Jess played beautifully to our guests and everyone commented on just how special it was to have a harpist, as well as how they enjoyed the range of classical and more modern pieces! We genuinely cannot thank Jess enough for making our day that bit more special and would recommend her to everyone!!! Jess is very competitively priced in comparison to other musicians and is so, so talented!!! We could listen to Jess play all day long! Thank you, Jess!”"
+        },
+        {
+            "id": 3,
+            "name": "Paul & Denise Bently (10/10)",
+            "text": "“I'm so glad we made the decision to book Jess for our 30th anniversary wedding vow renewal ceremony. Her presence lifted the whole event to another level & Jess was a delight to deal with, managing to incorporate our chosen music ancient & modern into the proceedings. Our friends & family were overwhelmed. An amazing <span>talented</span> young lady whom we would recommend without hesitation.”"
+        },
+        {
+            "id": 4,
+            "name": "Rehanna",
+            "text": "“Jessica played on our wedding ceremony on the 20 September 2014. <span>Highly recommend</span>. Individual approach and high level of professionalism, and a huge talent. Her music made our wedding ceremony unforgettable.”"
+        }
+    ]
+}
